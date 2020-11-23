@@ -31,7 +31,7 @@ yarn build-storybook
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js, storybook.js and tailwindcss, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API. You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 - [Storybook.js.org Documentation](https://storybook.js.org/docs/react/get-started/introduction) - learn about srorybook.js and features
