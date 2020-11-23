@@ -10,16 +10,37 @@ export default function Home() {
             Boilerplate
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Tailwind 2 with Next 10 & Storybook 6
+            Tailwind 2 with Next 10 & Storybook 6
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            This boilerplate uses tailwind combat mode since storybook 6 seems not to support postcss 8 for now.</p>
+            This boilerplate uses tailwind combat mode since storybook 6 seems
+            not to support postcss 8 for now.
+          </p>
           <div className="mt-4 flex-row flex space-x-3 lg:justify-center">
-            <Button onClick={() => window.open('https://tailwindcss.com/docs/installation#post-css-7-compatibility-build', '_blank')} colorSet="text-white bg-indigo-600 hover:bg-indigo-700" size="text-base">Postcss7 combat guide</Button>
-            <Button onClick={() => window.open('https://tailwindcss.com/docs', '_blank')} colorSet="text-indigo-600 bg-white border-indigo-500 hover:border-indigo-700 hover:text-indigo-700" size="text-base">Tailwind 2 docs</Button>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://tailwindcss.com/docs/installation#post-css-7-compatibility-build",
+                  "_blank"
+                )
+              }
+              colorSet="text-white bg-indigo-600 hover:bg-indigo-700"
+              size="text-base"
+              label="Postcss7 combat build"
+            >
+            </Button>
+            <Button
+              onClick={() =>
+                window.open("https://tailwindcss.com/docs", "_blank")
+              }
+              colorSet="text-indigo-600 bg-white border-indigo-500 hover:border-indigo-700 hover:text-indigo-700"
+              size="text-base"
+              label="Tailwind 2 docs"
+            >
+            </Button>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
