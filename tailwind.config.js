@@ -1,11 +1,31 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  future: {
+    purgeLayersByDefault: true,
+  },
+  purge: {
+    mode: 'layers',
+    layers: ['base', 'components', 'utilities'],
+    content: [
+      './components/**/*.js',
+      './pages/**/*.js'
+    ],
+  },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: colors.indigo,
+        secondary: colors.rose,
+        gray: colors.coolGray,
+      },
+      fontFamily: {
+        sans: ['Graphik', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+      },
+    },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  variants: {},
+  plugins: [
+  ],
 }
