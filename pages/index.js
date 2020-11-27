@@ -1,5 +1,4 @@
-import Head from "next/head";
-import { Button } from "@/components/atoms/Button/Button";
+import { Button } from "@/components/atoms/Button"
 
 export default function Home() {
   return (
@@ -24,7 +23,7 @@ export default function Home() {
                   "_blank"
                 )
               }
-              colorSet="text-white bg-indigo-600 hover:bg-indigo-700"
+              colorSet="btn--primary"
               size="text-base"
               label="Postcss7 combat build"
             >
@@ -33,7 +32,7 @@ export default function Home() {
               onClick={() =>
                 window.open("https://tailwindcss.com/docs", "_blank")
               }
-              colorSet="text-indigo-600 bg-white border-indigo-500 hover:border-indigo-700 hover:text-indigo-700"
+              colorSet="btn--secondary"
               size="text-base"
               label="Tailwind 2 docs"
             >
@@ -42,5 +41,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }

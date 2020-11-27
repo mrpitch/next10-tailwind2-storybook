@@ -4,7 +4,7 @@ export const Button = ({ colorSet, size, label, ...props }) => {
   return (
     <button
       type="button"
-      className={`px-5 py-3 border border-transparent rounded-md ${colorSet} ${size} font-medium `}
+      className={`btn ${colorSet} ${size}`}
       {...props}
     >
       {label}
@@ -29,7 +29,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  colorSet: 'text-white bg-indigo-600 hover:bg-indigo-700',
+  colorSet: 'btn--primary',
   size: 'text-sm',
   label: 'Click Me!',
   onClick: undefined,
